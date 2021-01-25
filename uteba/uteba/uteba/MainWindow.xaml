@@ -1,0 +1,35 @@
+﻿<Window x:Class="uteba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uteba"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+         <Style x:Key="rere">
+            
+
+        </Style>
+    </Window.Resources>
+   
+    <Grid Background="Aqua">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <Label Content="Welcome!"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Center" Foreground="Violet" FontFamily="Snap ITC"/>
+        <Label Content="Login" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="log_txtbx" Grid.Row="2" Height="50" Width="250"/>
+        <Label Content="Password" Grid.Row="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <PasswordBox x:Name="pass_psbx" Grid.Row="4" Height="50" Width="250"/>
+        <Button x:Name="bt_ent" Grid.Row="5" Content="Enter" Width="100" Height="40" Margin="70,0,220,0" />
+        <Button x:Name="bt_reg" Grid.Row="5" Content="Registration" Width="100" Height="40" Margin="220,0,70,0" />
+    </Grid>
+</Window>
