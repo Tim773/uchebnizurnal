@@ -5,15 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400" WindowStartupLocation="CenterScreen">
-    <Window.Resources>
-         <Style x:Key="rere">
-            
-
-        </Style>
-    </Window.Resources>
+        Title="Autoriz" Height="600" Width="400" WindowStartupLocation="CenterScreen">
    
-    <Grid Background="Aqua">
+   
+    <Grid Background="#FFA09E96">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -24,12 +19,12 @@
             <RowDefinition/>
             
         </Grid.RowDefinitions>
-        <Label Content="Welcome!"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Center" Foreground="Violet" FontFamily="Snap ITC"/>
-        <Label Content="Login" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-        <TextBox x:Name="log_txtbx" Grid.Row="2" Height="50" Width="250"/>
-        <Label Content="Password" Grid.Row="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
-        <PasswordBox x:Name="pass_psbx" Grid.Row="4" Height="50" Width="250"/>
-        <Button x:Name="bt_ent" Grid.Row="5" Content="Enter" Width="100" Height="40" Margin="70,0,220,0" />
-        <Button x:Name="bt_reg" Grid.Row="5" Content="Registration" Width="100" Height="40" Margin="220,0,70,0" />
+        <Label Content="Welcome!"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Center" Foreground="#FFFFF2F2" FontFamily="Snap ITC"/>
+        <Label Content="Login" Grid.Row="1" Margin=" 71,0" VerticalAlignment="Bottom" Style="{StaticResource Label}"/>
+        <TextBox x:Name="log_txtbx" Grid.Row="2" Style="{StaticResource txt_box}"/>
+        <Label Content="Password" Grid.Row="3"  Style="{StaticResource Label}" />
+        <PasswordBox x:Name="pass_psbx" Grid.Row="4" Style="{StaticResource psw_box}"/>
+        <Button x:Name="bt_ent" Grid.Row="5" Content="Enter" Width="100" Height="40" Margin="70,0,220,0" Click="bt_ent_Click" />
+        <Button x:Name="bt_reg" Grid.Row="5" Content="Registration" Width="100" Height="40" Margin="220,0,70,0" Click="bt_reg_Click" />
     </Grid>
 </Window>

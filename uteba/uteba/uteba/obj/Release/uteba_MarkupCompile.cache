@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\
+C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Release\
 uteba
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\App.xaml
 3-2102719939
 
@@ -16,5 +16,5 @@ C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\App.xaml
 13-1505183044
 Kabinet.xaml;MainWindow.xaml;RegWindow.xaml;
 
-False
+True
 

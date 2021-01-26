@@ -20,9 +20,35 @@ namespace uteba
     /// </summary>
     public partial class MainWindow : Window
     {
+        string login = "admin";
+        string password = "123";
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void bt_ent_Click(object sender, RoutedEventArgs e)
+        {
+           if (log_txtbx.Text == login && pass_psbx.Password == password)
+           {
+                Kabinet kabinet = new Kabinet();
+                this.Close();
+                kabinet.ShowDialog();
+           }
+            else
+            {
+                MessageBox.Show("Логин или пароль введены неверно");
+            }
+           
+        }
+
+        private void bt_reg_Click(object sender, RoutedEventArgs e)
+        {
+            RegWindow reg = new RegWindow();
+            this.Hide();
+            reg.ShowDialog();
+            this.Show();
         }
     }
 }
