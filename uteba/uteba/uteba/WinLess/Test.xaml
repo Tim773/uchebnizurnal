@@ -1,0 +1,32 @@
+﻿<Window x:Class="uteba.Test"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:uteba"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800" Background="#FFA09E96">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="testp" Text="FFHGFGHFGUHKJHJKHKJ" FontSize="20" TextWrapping="Wrap" Margin="82,38,82,10" Background="White"/>
+        <GroupBox Header="Варианты ответа" x:Name="otveti" Grid.Row="1" Margin="72,0,72,50">
+            <StackPanel >
+                <CheckBox x:Name="vA" Margin="5" Content="A"/>
+                <CheckBox x:Name="vB" Margin="5" Content="B"/>
+                <CheckBox x:Name="vC" Margin="5" Content="C"/>
+                <CheckBox x:Name="vD" Margin="5" Content="D"/>
+            </StackPanel>
+        </GroupBox>
+        <WrapPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button x:Name="next" Content="Далее" Width="100" Height="35" HorizontalAlignment="Right" Margin="0,368,25,16" Click="next_Click"/>
+            <Button x:Name="nazad" Content="Назад" Width="100" Height="35" HorizontalAlignment="Left" Margin="25,368,0,16" Click="nazad_Click"/>
+        </WrapPanel>
+
+    </Grid>
+</Window>

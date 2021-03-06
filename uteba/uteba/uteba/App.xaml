@@ -25,5 +25,6 @@
             <Setter Property="FontSize" Value="30"/>
 
         </Style>
+       
     </Application.Resources>
 </Application>

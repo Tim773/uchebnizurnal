@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
-        Title="RegWindow" Height="600" Width="400" WindowStartupLocation="CenterScreen">
+        Title="RegWindow" Height="660" Width="450" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFA09E96">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,8 +21,8 @@
 
         </Grid.RowDefinitions>
         <Label Content="Registation"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Top" Foreground="#FFFFF2F2" FontFamily="Snap ITC" Grid.RowSpan="2"/>
-        <ScrollViewer Grid.Row="2" Grid.RowSpan="7">
-            <StackPanel>
+        <ScrollViewer Grid.Row="2" Grid.RowSpan="6">
+            <StackPanel >
                 <Label Content="Name" Style="{StaticResource Label}"/>
                 <TextBox x:Name="name_txt" Style="{StaticResource txt_box}"/>
                 <Label Content="Surname" Style="{StaticResource Label}"/>

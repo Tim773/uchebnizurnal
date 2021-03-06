@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace uteba
 {
     /// <summary>
@@ -32,10 +33,15 @@ namespace uteba
         {
            if (log_txtbx.Text == login && pass_psbx.Password == password)
            {
-                Kabinet kabinet = new Kabinet();
+                /* Kabinet kabinet = new Kabinet();
+                 this.Close();
+                 kabinet.ShowDialog();
+                */
+                Lession lession = new Lession();
                 this.Close();
-                kabinet.ShowDialog();
-           }
+                lession.ShowDialog();
+
+            }
             else
             {
                 MessageBox.Show("Логин или пароль введены неверно");
