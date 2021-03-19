@@ -30,7 +30,7 @@ namespace uteba
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            StreamReader sr = new StreamReader($@"F:\uchebnizurnal\uteba\uteba\uteba\lessons\{_num}.txt");
+            StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\lessons\{_num}.txt");
             urok.Text = sr.ReadToEnd();
            
         }

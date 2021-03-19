@@ -68,9 +68,6 @@
     <Compile Include="WinLess\Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WinLess\TestPage1.xaml.cs">
-      <DependentUpon>TestPage1.xaml</DependentUpon>
-    </Compile>
     <Page Include="WinLess\Kabinet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -103,10 +100,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WinLess\Test.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WinLess\TestPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

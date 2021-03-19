@@ -56,12 +56,10 @@ D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Kabinet.g.cs
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\LesPage.g.cs
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Lession.g.cs
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Test.g.cs
-D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\TestPage1.g.cs
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Kabinet.baml
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\LesPage.baml
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Lession.baml
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Test.baml
-D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\TestPage1.baml
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\RegWindow.g.cs
 D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\RegWindow.baml
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\uteba.exe.config
@@ -92,3 +90,4 @@ F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.GenerateResource.cache
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CoreCompileInputs.cache
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.exe
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.pdb
+D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csprojAssemblyReference.cache

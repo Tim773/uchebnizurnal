@@ -183,7 +183,9 @@ namespace uteba
         private void testl1_Click(object sender, RoutedEventArgs e)
         {
             Test test = new Test(pageNum);
+            Hide();
             test.ShowDialog();
+            Show();
         }
 
       
