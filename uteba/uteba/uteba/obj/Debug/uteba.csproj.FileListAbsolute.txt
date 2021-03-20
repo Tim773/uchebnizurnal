@@ -72,7 +72,6 @@ F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Lession.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\MainWindow.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\RegWindow.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Test.g.cs
-F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\TestPage1.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\App.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba_MarkupCompile.cache
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba_MarkupCompile.lref
@@ -83,7 +82,6 @@ F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Lession.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\MainWindow.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\RegWindow.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Test.baml
-F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\TestPage1.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.g.resources
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.Properties.Resources.resources
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.GenerateResource.cache

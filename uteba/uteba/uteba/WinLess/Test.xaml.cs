@@ -32,10 +32,11 @@ namespace uteba
 
         private void testp_Loaded(object sender, RoutedEventArgs e)
         {
-           
-            
-                StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_1.txt");
-                testp.Text = sr.ReadToEnd();
+
+
+            // StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_1.txt");
+            StreamReader sr = new StreamReader($@"F:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_1.txt");
+            testp.Text = sr.ReadToEnd();
 
             
         }
@@ -43,7 +44,8 @@ namespace uteba
         private void next_Click(object sender, RoutedEventArgs e)
         {
             
-            StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_2.txt");
+            //StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_2.txt");
+            StreamReader sr = new StreamReader($@"F:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_2.txt");
             testp.Text = sr.ReadToEnd();
         }
 

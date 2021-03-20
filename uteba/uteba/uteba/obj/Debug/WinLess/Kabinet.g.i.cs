@@ -40,6 +40,46 @@ namespace uteba {
     /// </summary>
     public partial class Kabinet : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 39 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock txtblk_fName;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 46 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock txtblk_lName;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 53 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBlock txtblk_group;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 60 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btn_lessons;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 66 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ProgressBar pb_Lesson;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -68,6 +108,30 @@ namespace uteba {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.txtblk_fName = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 2:
+            this.txtblk_lName = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 3:
+            this.txtblk_group = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 4:
+            this.btn_lessons = ((System.Windows.Controls.Button)(target));
+            
+            #line 65 "..\..\..\WinLess\Kabinet.xaml"
+            this.btn_lessons.Click += new System.Windows.RoutedEventHandler(this.btn_lessons_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 5:
+            this.pb_Lesson = ((System.Windows.Controls.ProgressBar)(target));
+            return;
+            }
             this._contentLoaded = true;
         }
     }

@@ -23,5 +23,10 @@ namespace uteba
         {
             InitializeComponent();
         }
+
+        private void btn_lessons_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
