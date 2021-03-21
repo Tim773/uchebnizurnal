@@ -20,14 +20,14 @@ namespace uteba
     /// </summary>
     public partial class Test : Window
     {
-        int num_;
+        
         int testNum;
         public Test(int pageNum)
         {
             InitializeComponent();
 
              testNum = pageNum;
-             num_ = 1;
+             
         }
 
         private void testp_Loaded(object sender, RoutedEventArgs e)
