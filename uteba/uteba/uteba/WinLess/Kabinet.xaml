@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="Kabinet" Height="450" Width="800" Background="#FFA09E96">
     <Grid>
         <Grid.RowDefinitions>
@@ -56,6 +57,7 @@
                    Grid.Row="3"
                    Grid.Column="1"
                    VerticalAlignment="Center"
+                  
                    />
         <Button x:Name="btn_lessons"
                 Content="Лекции"

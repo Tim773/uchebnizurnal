@@ -17,16 +17,17 @@
         <TextBlock x:Name="testp" Text="FFHGFGHFGUHKJHJKHKJ" FontSize="20" TextWrapping="Wrap" Margin="82,38,82,10" Background="White" Loaded="testp_Loaded"/>
         <GroupBox Header="Варианты ответа" x:Name="otveti" Grid.Row="1" Margin="72,0,72,50">
             <StackPanel >
-                <CheckBox x:Name="vA" Margin="5 2" Content="A"/>
-                <CheckBox x:Name="vB" Margin="5 2" Content="B"/>
-                <CheckBox x:Name="vC" Margin="5 2" Content="C"/>
-                <CheckBox x:Name="vD" Margin="5 2" Content="D"/>
+                <RadioButton x:Name="vA" Margin="5 2" Content="A"/>
+                <RadioButton x:Name="vB" Margin="5 2" Content="B"/>
+                <RadioButton x:Name="vC" Margin="5 2" Content="C"/>
+                <RadioButton x:Name="vD" Margin="5 2" Content="D"/>
             </StackPanel>
         </GroupBox>
         <WrapPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
 
             <Button x:Name="nazad" Content="Назад" Width="100" Height="35" HorizontalAlignment="Left" Click="nazad_Click"/>
             <Button x:Name="next" Content="Далее" Width="100" Height="35" HorizontalAlignment="Right" Margin="10" Click="next_Click"/>
+            <Button x:Name="finish" Content="Завершить" Width="100" Height="35" HorizontalAlignment="Right" Margin="10" Click="finish_Click"/>
            
         </WrapPanel>
 

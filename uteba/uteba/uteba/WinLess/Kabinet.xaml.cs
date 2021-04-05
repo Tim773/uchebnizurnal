@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static uteba.WinLess.ClassApp;
 
 namespace uteba
 {
@@ -19,6 +20,7 @@ namespace uteba
     /// </summary>
     public partial class Kabinet : Window
     {
+       
         public Kabinet()
         {
             InitializeComponent();
@@ -26,7 +28,20 @@ namespace uteba
 
         private void btn_lessons_Click(object sender, RoutedEventArgs e)
         {
+            Lession lession = new Lession();
+            Close();
+            lession.ShowDialog();
+            
 
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtblk_fName.Text = usStud.fName;
+            txtblk_lName.Text = usStud.lName;
+            txtblk_group.Text = usStud.group.ToString();
+        }
+
+        
     }
 }

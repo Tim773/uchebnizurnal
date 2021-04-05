@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Release\
+D:\uchebnizurnal\uteba\uteba\uteba\obj\Release\
 uteba
 none
 false
 TRACE
-C:\Users\WSR\Source\Repos\uchebnizurnal\uteba\uteba\uteba\App.xaml
-3-2102719939
+D:\uchebnizurnal\uteba\uteba\uteba\App.xaml
+7-570242343
+2-311823253
+2089973883
+181169723190
+WinLess\AdminWin.xaml;WinLess\Kabinet.xaml;WinLess\LesPage.xaml;WinLess\Lession.xaml;MainWindow.xaml;WinLess\RegWindow.xaml;WinLess\Test.xaml;
 
-7-1137289617
-13-1505183044
-Kabinet.xaml;MainWindow.xaml;RegWindow.xaml;
-
-True
+False
 

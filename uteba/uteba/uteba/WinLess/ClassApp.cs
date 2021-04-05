@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace uteba.WinLess
 {
-    class ClassApp
+   public class ClassApp
     {
-
-
+        public static Entities context = new Entities();
+        public static Teachers usTeach;
+        public static Students usStud;
     }
 }

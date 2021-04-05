@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using uteba.WinLess;
+using static uteba.WinLess.ClassApp;
+
 
 
 namespace uteba
@@ -21,32 +24,51 @@ namespace uteba
     /// </summary>
     public partial class MainWindow : Window
     {
-        string login = "admin";
-        string password = "123";
+        static public int sw_roll = 0;
         public MainWindow()
         {
             InitializeComponent();
-            
+
+        }
+
+        enum Role
+        {
+            admin = 1,
+            student
         }
 
         private void bt_ent_Click(object sender, RoutedEventArgs e)
         {
-           if (log_txtbx.Text == login && pass_psbx.Password == password)
-           {
-                /* Kabinet kabinet = new Kabinet();
-                 this.Close();
-                 kabinet.ShowDialog();
-                */
-                Lession lession = new Lession();
-                this.Close();
-                lession.ShowDialog();
-
-            }
-            else
+            try
             {
-                MessageBox.Show("Логин или пароль введены неверно");
+                var user1 = context.Students.ToList().
+                    Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
+                var user2 = context.Teachers.ToList().
+                    Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
+                AdminWin adminWin = new AdminWin();
+                Kabinet studWin = new Kabinet();
+                if (user1 != null && user2 == null)
+                {
+                    Close();
+                    usStud = user1;
+                    studWin.ShowDialog();
+                    
+                }
+                else if(user1 == null && user2 != null)
+                {
+                    Close();
+                    usTeach = user2;
+                    adminWin.ShowDialog();
+                }
+                else 
+                {
+                    MessageBox.Show("Логин или пароль введены неверно");
+                }
             }
-           
+            catch (Exception msg)
+            {
+                MessageBox.Show(msg.Message);
+            }
         }
 
         private void bt_reg_Click(object sender, RoutedEventArgs e)
