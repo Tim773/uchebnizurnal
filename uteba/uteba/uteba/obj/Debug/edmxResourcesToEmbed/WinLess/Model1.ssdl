@@ -8,14 +8,6 @@
     <Property Name="groupName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="curator" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="Progress">
-    <Key>
-      <PropertyRef Name="idProgress" />
-    </Key>
-    <Property Name="idProgress" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="idStud" Type="int" Nullable="false" />
-    <Property Name="lessCheck" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="Students">
     <Key>
       <PropertyRef Name="idStud" />
@@ -28,6 +20,7 @@
     <Property Name="available" Type="int" Nullable="false" />
     <Property Name="login" Type="nvarchar" MaxLength="50" />
     <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="lessCheck" Type="int" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -62,18 +55,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Progress_Students1">
-    <End Role="Students" Type="Self.Students" Multiplicity="1" />
-    <End Role="Progress" Type="Self.Progress" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Students">
-        <PropertyRef Name="idStud" />
-      </Principal>
-      <Dependent Role="Progress">
-        <PropertyRef Name="idStud" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Students_Group">
     <End Role="Group" Type="Self.Group" Multiplicity="1" />
     <End Role="Students" Type="Self.Students" Multiplicity="*" />
@@ -88,17 +69,12 @@
   </Association>
   <EntityContainer Name="Хранилище LessonAppModelContainer">
     <EntitySet Name="Group" EntityType="Self.Group" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Progress" EntityType="Self.Progress" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Teachers" EntityType="Self.Teachers" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Group_Teachers" Association="Self.FK_Group_Teachers">
       <End Role="Teachers" EntitySet="Teachers" />
       <End Role="Group" EntitySet="Group" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Progress_Students1" Association="Self.FK_Progress_Students1">
-      <End Role="Students" EntitySet="Students" />
-      <End Role="Progress" EntitySet="Progress" />
     </AssociationSet>
     <AssociationSet Name="FK_Students_Group" Association="Self.FK_Students_Group">
       <End Role="Group" EntitySet="Group" />

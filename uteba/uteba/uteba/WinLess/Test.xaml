@@ -15,12 +15,20 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="testp" Text="FFHGFGHFGUHKJHJKHKJ" FontSize="20" TextWrapping="Wrap" Margin="82,38,82,10" Background="White" Loaded="testp_Loaded"/>
-        <GroupBox Header="Варианты ответа" x:Name="otveti" Grid.Row="1" Margin="72,0,72,50">
-            <StackPanel >
-                <RadioButton x:Name="vA" Margin="5 2" Content="A"/>
-                <RadioButton x:Name="vB" Margin="5 2" Content="B"/>
-                <RadioButton x:Name="vC" Margin="5 2" Content="C"/>
-                <RadioButton x:Name="vD" Margin="5 2" Content="D"/>
+        <GroupBox Header="Варианты ответа" x:Name="otveti" Grid.Row="1" Margin="72,0,72,50" Visibility="Visible">
+            <StackPanel  >
+                <RadioButton x:Name="vA" Margin="5 2" Content="A" Checked="ansChecked" GroupName="ans1"/>
+                <RadioButton x:Name="vB" Margin="5 2" Content="B" Checked="ansChecked" GroupName="ans1"/>
+                <RadioButton x:Name="vC" Margin="5 2" Content="C" Checked="ansChecked" GroupName="ans1"/>
+                <RadioButton x:Name="vD" Margin="5 2" Content="D" Checked="ansChecked" GroupName="ans1"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Варианты ответа" x:Name="otveti2" Grid.Row="1" Margin="72,0,72,50" Visibility="Hidden">
+            <StackPanel>
+                <RadioButton x:Name="vA2" Margin="5 2" Content="A" Checked="ansChecked" GroupName="ans2"/>
+                <RadioButton x:Name="vB2" Margin="5 2" Content="B" Checked="ansChecked" GroupName="ans2"/>
+                <RadioButton x:Name="vC2" Margin="5 2" Content="C" Checked="ansChecked" GroupName="ans2"/>
+                <RadioButton x:Name="vD2" Margin="5 2" Content="D" Checked="ansChecked" GroupName="ans2"/>
             </StackPanel>
         </GroupBox>
         <WrapPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">

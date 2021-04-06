@@ -10,15 +10,6 @@
     <NavigationProperty Name="Teachers" Relationship="Self.FK_Group_Teachers" FromRole="Group" ToRole="Teachers" />
     <NavigationProperty Name="Students" Relationship="Self.FK_Students_Group" FromRole="Group" ToRole="Students" />
   </EntityType>
-  <EntityType Name="Progress">
-    <Key>
-      <PropertyRef Name="idProgress" />
-    </Key>
-    <Property Name="idProgress" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="idStud" Type="Int32" Nullable="false" />
-    <Property Name="lessCheck" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Students" Relationship="Self.FK_Progress_Students1" FromRole="Progress" ToRole="Students" />
-  </EntityType>
   <EntityType Name="Students">
     <Key>
       <PropertyRef Name="idStud" />
@@ -30,9 +21,9 @@
     <Property Name="group" Type="Int32" Nullable="false" />
     <Property Name="available" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Group1" Relationship="Self.FK_Students_Group" FromRole="Students" ToRole="Group" />
-    <NavigationProperty Name="Progress" Relationship="Self.FK_Progress_Students1" FromRole="Students" ToRole="Progress" />
     <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lessCheck" Type="Int32" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -80,21 +71,8 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Progress_Students1">
-    <End Role="Students" Type="Self.Students" Multiplicity="1" />
-    <End Role="Progress" Type="Self.Progress" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Students">
-        <PropertyRef Name="idStud" />
-      </Principal>
-      <Dependent Role="Progress">
-        <PropertyRef Name="idStud" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Group" EntityType="Self.Group" />
-    <EntitySet Name="Progress" EntityType="Self.Progress" />
     <EntitySet Name="Students" EntityType="Self.Students" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Teachers" EntityType="Self.Teachers" />
@@ -105,10 +83,6 @@
     <AssociationSet Name="FK_Students_Group" Association="Self.FK_Students_Group">
       <End Role="Group" EntitySet="Group" />
       <End Role="Students" EntitySet="Students" />
-    </AssociationSet>
-    <AssociationSet Name="FK_Progress_Students1" Association="Self.FK_Progress_Students1">
-      <End Role="Students" EntitySet="Students" />
-      <End Role="Progress" EntitySet="Progress" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

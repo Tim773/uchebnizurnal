@@ -11,5 +11,7 @@ namespace uteba.WinLess
         public static Entities context = new Entities();
         public static Teachers usTeach;
         public static Students usStud;
+        public static int progress;
+        public static int lessonsFin;
     }
 }

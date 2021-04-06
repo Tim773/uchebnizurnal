@@ -10,18 +10,10 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Progress">
-      <EntityTypeMapping TypeName="LessonAppModel.Progress">
-        <MappingFragment StoreEntitySet="Progress">
-          <ScalarProperty Name="idProgress" ColumnName="idProgress" />
-          <ScalarProperty Name="idStud" ColumnName="idStud" />
-          <ScalarProperty Name="lessCheck" ColumnName="lessCheck" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Students">
       <EntityTypeMapping TypeName="LessonAppModel.Students">
         <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="lessCheck" ColumnName="lessCheck" />
           <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="login" ColumnName="login" />
           <ScalarProperty Name="idStud" ColumnName="idStud" />

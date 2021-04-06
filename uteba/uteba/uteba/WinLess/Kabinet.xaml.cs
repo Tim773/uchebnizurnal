@@ -40,6 +40,7 @@ namespace uteba
             txtblk_fName.Text = usStud.fName;
             txtblk_lName.Text = usStud.lName;
             txtblk_group.Text = usStud.group.ToString();
+            pb_Lesson.Value = (int)usStud.lessCheck;
         }
 
         

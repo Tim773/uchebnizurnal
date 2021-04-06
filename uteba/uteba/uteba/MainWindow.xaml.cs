@@ -39,8 +39,8 @@ namespace uteba
 
         private void bt_ent_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
+            //try
+            //{
                 var user1 = context.Students.ToList().
                     Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
                 var user2 = context.Teachers.ToList().
@@ -64,11 +64,11 @@ namespace uteba
                 {
                     MessageBox.Show("Логин или пароль введены неверно");
                 }
-            }
-            catch (Exception msg)
-            {
-                MessageBox.Show(msg.Message);
-            }
+            //}
+            //catch (Exception msg)
+            //{
+            //    MessageBox.Show(msg.Message);
+            //}
         }
 
         private void bt_reg_Click(object sender, RoutedEventArgs e)
