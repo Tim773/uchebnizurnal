@@ -5,8 +5,55 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba.WinLess"
         mc:Ignorable="d"
+        Background="#FFA09E96"
         Title="AdminWin" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="44*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="studGrid"
+                  Loaded="studGrid_Loaded"
+                  AutoGenerateColumns="False"
+                FontSize="25"
+                  Grid.Row="1"
+                  Grid.Column="1"
+                  Grid.ColumnSpan="5"
+                  Grid.RowSpan="4">
+            <DataGrid.Columns  >
+                <DataGridTextColumn Header="Имя"
+                                    Binding="{Binding Path=fName}"  Width="auto"/>
+                <DataGridTextColumn Header="Фамилия"
+                                    Binding="{Binding Path=lName,
+                    Mode=TwoWay,
+                    UpdateSourceTrigger=PropertyChanged}" Width="auto" />
+                <DataGridComboBoxColumn x:Name="grCB" Header="Группа"
+                                    SelectedValueBinding="{Binding Path=group,
+                    Mode=TwoWay,
+                    UpdateSourceTrigger=PropertyChanged}"  DisplayMemberPath="groupName" SelectedValuePath="idGroup" Width="auto" />
+                <DataGridTextColumn Header="Прогресс"
+                                    Binding="{Binding Path=lessCheck,
+                    Mode=TwoWay,
+                    UpdateSourceTrigger=PropertyChanged}"  Width="auto"/>
+                
+                
+            </DataGrid.Columns>
+          
+        </DataGrid>
+        <Button x:Name="soft_del" Content="Удалить" Grid.Column="3" Grid.Row="5" Height="20" Width="100" Click="soft_del_Click"/>
+
     </Grid>
 </Window>

@@ -18,23 +18,35 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
 
         </Grid.RowDefinitions>
         <Label Content="Registation"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Top" Foreground="#FFFFF2F2" FontFamily="Snap ITC" Grid.RowSpan="2"/>
-        
+        <ScrollViewer Grid.Row="2" Grid.RowSpan="8">
+            
             <StackPanel Grid.Row="2" Grid.RowSpan="6">
                 <Label Content="Name" Style="{StaticResource Label}"/>
                 <TextBox x:Name="name_txt" Style="{StaticResource txt_box}"/>
                 <Label Content="Surname" Style="{StaticResource Label}"/>
                 <TextBox x:Name="surname_txt" Style="{StaticResource txt_box}"/>
-                
-                
-                
+                <Label Content="Date of Birth" Style="{StaticResource Label}"/>
+                <DatePicker x:Name="dobPick" Height="50" Width="250"/>
+
+
                 <Label Content="Login" Style="{StaticResource Label}"/>
                 <TextBox x:Name="rlog_txt" Style="{StaticResource txt_box}"/>
                 <Label Content="Password" Style="{StaticResource Label}"/>
                 <PasswordBox x:Name="rpsw_txt" Style="{StaticResource psw_box}"/>
+                <Label Content="Group" Style="{StaticResource Label}"/>
+                <ComboBox x:Name="cb_group"
+                    Height="50" Width="250" ItemsSource="{Binding Group.groupName}"
+                          DisplayMemberPath="groupName"
+                          SelectedValuePath="idGroup"
+                          Loaded="ComboBox_Loaded"/>
+
+                <Button Content="Регистрация" Width="100" Height="40" Margin="70,30,220,0" Click="Reg_Click"/>
             </StackPanel>
+        </ScrollViewer>
       
       
 

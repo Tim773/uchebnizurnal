@@ -98,56 +98,56 @@ namespace uteba
             }
             if (testNum == 2)
             {
-                if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
+                if (ans.Name == "vD" && ans.GroupName == "ans1") a++;
                 else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 3)
             {
                 if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                else if (ans.Name == "vB2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 4)
             {
-                if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                if (ans.Name == "vA" && ans.GroupName == "ans1") a++;
+                else if (ans.Name == "vC2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 5)
             {
                 if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                else if (ans.Name == "vC2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 6)
             {
                 if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                else if (ans.Name == "vB2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 7)
             {
-                if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
+                if (ans.Name == "vA" && ans.GroupName == "ans1") a++;
                 else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 8)
             {
                 if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                else if (ans.Name == "vC2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 9)
             {
-                if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                if (ans.Name == "vD" && ans.GroupName == "ans1") a++;
+                else if (ans.Name == "vD2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 10)
             {
                 if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
-                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                else if (ans.Name == "vB2" && ans.GroupName == "ans2") a++;
 
             }
 
