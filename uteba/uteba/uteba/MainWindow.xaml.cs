@@ -39,8 +39,8 @@ namespace uteba
 
         private void bt_ent_Click(object sender, RoutedEventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 var user1 = context.Students.ToList().
                     Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
                 var user2 = context.Teachers.ToList().
@@ -52,24 +52,26 @@ namespace uteba
                     Close();
                     usStud = user1;
                     studWin.ShowDialog();
-                    
+                   // this.Show();
+
                 }
                 else if(user1 == null && user2 != null)
                 {
                     Close();
                     usTeach = user2;
                     adminWin.ShowDialog();
+                    //this.Show();
                 }
                 else 
                 {
                     MessageBox.Show("Логин или пароль введены неверно");
                 }
-            //}
-            //catch (Exception msg)
-            //{
-            //    MessageBox.Show(msg.Message);
-            //}
         }
+            catch (Exception msg)
+            {
+                MessageBox.Show(msg.Message);
+            }
+}
 
         private void bt_reg_Click(object sender, RoutedEventArgs e)
         {

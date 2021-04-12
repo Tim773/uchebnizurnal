@@ -41,33 +41,9 @@ namespace uteba {
     public partial class Lession : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 29 "..\..\..\WinLess\Lession.xaml"
+        #line 27 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 30 "..\..\..\WinLess\Lession.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl1;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 31 "..\..\..\WinLess\Lession.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les2;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 32 "..\..\..\WinLess\Lession.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl2;
+        internal System.Windows.Controls.Button btn_toKab;
         
         #line default
         #line hidden
@@ -75,7 +51,7 @@ namespace uteba {
         
         #line 33 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les3;
+        internal System.Windows.Controls.Button les1;
         
         #line default
         #line hidden
@@ -83,7 +59,7 @@ namespace uteba {
         
         #line 34 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl3;
+        internal System.Windows.Controls.Button testl1;
         
         #line default
         #line hidden
@@ -91,7 +67,7 @@ namespace uteba {
         
         #line 35 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les4;
+        internal System.Windows.Controls.Button les2;
         
         #line default
         #line hidden
@@ -99,7 +75,7 @@ namespace uteba {
         
         #line 36 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl4;
+        internal System.Windows.Controls.Button testl2;
         
         #line default
         #line hidden
@@ -107,7 +83,7 @@ namespace uteba {
         
         #line 37 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les5;
+        internal System.Windows.Controls.Button les3;
         
         #line default
         #line hidden
@@ -115,7 +91,7 @@ namespace uteba {
         
         #line 38 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl5;
+        internal System.Windows.Controls.Button testl3;
         
         #line default
         #line hidden
@@ -123,7 +99,7 @@ namespace uteba {
         
         #line 39 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les6;
+        internal System.Windows.Controls.Button les4;
         
         #line default
         #line hidden
@@ -131,7 +107,7 @@ namespace uteba {
         
         #line 40 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl6;
+        internal System.Windows.Controls.Button testl4;
         
         #line default
         #line hidden
@@ -139,7 +115,7 @@ namespace uteba {
         
         #line 41 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les7;
+        internal System.Windows.Controls.Button les5;
         
         #line default
         #line hidden
@@ -147,7 +123,7 @@ namespace uteba {
         
         #line 42 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl7;
+        internal System.Windows.Controls.Button testl5;
         
         #line default
         #line hidden
@@ -155,7 +131,7 @@ namespace uteba {
         
         #line 43 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les8;
+        internal System.Windows.Controls.Button les6;
         
         #line default
         #line hidden
@@ -163,7 +139,7 @@ namespace uteba {
         
         #line 44 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl8;
+        internal System.Windows.Controls.Button testl6;
         
         #line default
         #line hidden
@@ -171,7 +147,7 @@ namespace uteba {
         
         #line 45 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les9;
+        internal System.Windows.Controls.Button les7;
         
         #line default
         #line hidden
@@ -179,7 +155,7 @@ namespace uteba {
         
         #line 46 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl9;
+        internal System.Windows.Controls.Button testl7;
         
         #line default
         #line hidden
@@ -187,7 +163,7 @@ namespace uteba {
         
         #line 47 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button les10;
+        internal System.Windows.Controls.Button les8;
         
         #line default
         #line hidden
@@ -195,13 +171,45 @@ namespace uteba {
         
         #line 48 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button testl10;
+        internal System.Windows.Controls.Button testl8;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 49 "..\..\..\WinLess\Lession.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button les9;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 50 "..\..\..\WinLess\Lession.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button testl9;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 51 "..\..\..\WinLess\Lession.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button les10;
         
         #line default
         #line hidden
         
         
         #line 52 "..\..\..\WinLess\Lession.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button testl10;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 56 "..\..\..\WinLess\Lession.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Frame lespage;
         
@@ -239,186 +247,195 @@ namespace uteba {
             switch (connectionId)
             {
             case 1:
-            this.les1 = ((System.Windows.Controls.Button)(target));
+            this.btn_toKab = ((System.Windows.Controls.Button)(target));
             
-            #line 29 "..\..\..\WinLess\Lession.xaml"
-            this.les1.Click += new System.Windows.RoutedEventHandler(this.les1_Click);
+            #line 30 "..\..\..\WinLess\Lession.xaml"
+            this.btn_toKab.Click += new System.Windows.RoutedEventHandler(this.btn_toKab_Click);
             
             #line default
             #line hidden
             return;
             case 2:
-            this.testl1 = ((System.Windows.Controls.Button)(target));
+            this.les1 = ((System.Windows.Controls.Button)(target));
             
-            #line 30 "..\..\..\WinLess\Lession.xaml"
-            this.testl1.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 33 "..\..\..\WinLess\Lession.xaml"
+            this.les1.Click += new System.Windows.RoutedEventHandler(this.les1_Click);
             
             #line default
             #line hidden
             return;
             case 3:
-            this.les2 = ((System.Windows.Controls.Button)(target));
+            this.testl1 = ((System.Windows.Controls.Button)(target));
             
-            #line 31 "..\..\..\WinLess\Lession.xaml"
-            this.les2.Click += new System.Windows.RoutedEventHandler(this.les2_Click);
+            #line 34 "..\..\..\WinLess\Lession.xaml"
+            this.testl1.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 4:
-            this.testl2 = ((System.Windows.Controls.Button)(target));
+            this.les2 = ((System.Windows.Controls.Button)(target));
             
-            #line 32 "..\..\..\WinLess\Lession.xaml"
-            this.testl2.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 35 "..\..\..\WinLess\Lession.xaml"
+            this.les2.Click += new System.Windows.RoutedEventHandler(this.les2_Click);
             
             #line default
             #line hidden
             return;
             case 5:
-            this.les3 = ((System.Windows.Controls.Button)(target));
+            this.testl2 = ((System.Windows.Controls.Button)(target));
             
-            #line 33 "..\..\..\WinLess\Lession.xaml"
-            this.les3.Click += new System.Windows.RoutedEventHandler(this.les3_Click);
+            #line 36 "..\..\..\WinLess\Lession.xaml"
+            this.testl2.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 6:
-            this.testl3 = ((System.Windows.Controls.Button)(target));
+            this.les3 = ((System.Windows.Controls.Button)(target));
             
-            #line 34 "..\..\..\WinLess\Lession.xaml"
-            this.testl3.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 37 "..\..\..\WinLess\Lession.xaml"
+            this.les3.Click += new System.Windows.RoutedEventHandler(this.les3_Click);
             
             #line default
             #line hidden
             return;
             case 7:
-            this.les4 = ((System.Windows.Controls.Button)(target));
+            this.testl3 = ((System.Windows.Controls.Button)(target));
             
-            #line 35 "..\..\..\WinLess\Lession.xaml"
-            this.les4.Click += new System.Windows.RoutedEventHandler(this.les4_Click);
+            #line 38 "..\..\..\WinLess\Lession.xaml"
+            this.testl3.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 8:
-            this.testl4 = ((System.Windows.Controls.Button)(target));
+            this.les4 = ((System.Windows.Controls.Button)(target));
             
-            #line 36 "..\..\..\WinLess\Lession.xaml"
-            this.testl4.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 39 "..\..\..\WinLess\Lession.xaml"
+            this.les4.Click += new System.Windows.RoutedEventHandler(this.les4_Click);
             
             #line default
             #line hidden
             return;
             case 9:
-            this.les5 = ((System.Windows.Controls.Button)(target));
+            this.testl4 = ((System.Windows.Controls.Button)(target));
             
-            #line 37 "..\..\..\WinLess\Lession.xaml"
-            this.les5.Click += new System.Windows.RoutedEventHandler(this.les5_Click);
+            #line 40 "..\..\..\WinLess\Lession.xaml"
+            this.testl4.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 10:
-            this.testl5 = ((System.Windows.Controls.Button)(target));
+            this.les5 = ((System.Windows.Controls.Button)(target));
             
-            #line 38 "..\..\..\WinLess\Lession.xaml"
-            this.testl5.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 41 "..\..\..\WinLess\Lession.xaml"
+            this.les5.Click += new System.Windows.RoutedEventHandler(this.les5_Click);
             
             #line default
             #line hidden
             return;
             case 11:
-            this.les6 = ((System.Windows.Controls.Button)(target));
+            this.testl5 = ((System.Windows.Controls.Button)(target));
             
-            #line 39 "..\..\..\WinLess\Lession.xaml"
-            this.les6.Click += new System.Windows.RoutedEventHandler(this.les6_Click);
+            #line 42 "..\..\..\WinLess\Lession.xaml"
+            this.testl5.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 12:
-            this.testl6 = ((System.Windows.Controls.Button)(target));
+            this.les6 = ((System.Windows.Controls.Button)(target));
             
-            #line 40 "..\..\..\WinLess\Lession.xaml"
-            this.testl6.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 43 "..\..\..\WinLess\Lession.xaml"
+            this.les6.Click += new System.Windows.RoutedEventHandler(this.les6_Click);
             
             #line default
             #line hidden
             return;
             case 13:
-            this.les7 = ((System.Windows.Controls.Button)(target));
+            this.testl6 = ((System.Windows.Controls.Button)(target));
             
-            #line 41 "..\..\..\WinLess\Lession.xaml"
-            this.les7.Click += new System.Windows.RoutedEventHandler(this.les7_Click);
+            #line 44 "..\..\..\WinLess\Lession.xaml"
+            this.testl6.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 14:
-            this.testl7 = ((System.Windows.Controls.Button)(target));
+            this.les7 = ((System.Windows.Controls.Button)(target));
             
-            #line 42 "..\..\..\WinLess\Lession.xaml"
-            this.testl7.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 45 "..\..\..\WinLess\Lession.xaml"
+            this.les7.Click += new System.Windows.RoutedEventHandler(this.les7_Click);
             
             #line default
             #line hidden
             return;
             case 15:
-            this.les8 = ((System.Windows.Controls.Button)(target));
+            this.testl7 = ((System.Windows.Controls.Button)(target));
             
-            #line 43 "..\..\..\WinLess\Lession.xaml"
-            this.les8.Click += new System.Windows.RoutedEventHandler(this.les8_Click);
+            #line 46 "..\..\..\WinLess\Lession.xaml"
+            this.testl7.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 16:
-            this.testl8 = ((System.Windows.Controls.Button)(target));
+            this.les8 = ((System.Windows.Controls.Button)(target));
             
-            #line 44 "..\..\..\WinLess\Lession.xaml"
-            this.testl8.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 47 "..\..\..\WinLess\Lession.xaml"
+            this.les8.Click += new System.Windows.RoutedEventHandler(this.les8_Click);
             
             #line default
             #line hidden
             return;
             case 17:
-            this.les9 = ((System.Windows.Controls.Button)(target));
+            this.testl8 = ((System.Windows.Controls.Button)(target));
             
-            #line 45 "..\..\..\WinLess\Lession.xaml"
-            this.les9.Click += new System.Windows.RoutedEventHandler(this.les9_Click);
+            #line 48 "..\..\..\WinLess\Lession.xaml"
+            this.testl8.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 18:
-            this.testl9 = ((System.Windows.Controls.Button)(target));
+            this.les9 = ((System.Windows.Controls.Button)(target));
             
-            #line 46 "..\..\..\WinLess\Lession.xaml"
-            this.testl9.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 49 "..\..\..\WinLess\Lession.xaml"
+            this.les9.Click += new System.Windows.RoutedEventHandler(this.les9_Click);
             
             #line default
             #line hidden
             return;
             case 19:
-            this.les10 = ((System.Windows.Controls.Button)(target));
+            this.testl9 = ((System.Windows.Controls.Button)(target));
             
-            #line 47 "..\..\..\WinLess\Lession.xaml"
-            this.les10.Click += new System.Windows.RoutedEventHandler(this.les10_Click);
+            #line 50 "..\..\..\WinLess\Lession.xaml"
+            this.testl9.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
             
             #line default
             #line hidden
             return;
             case 20:
-            this.testl10 = ((System.Windows.Controls.Button)(target));
+            this.les10 = ((System.Windows.Controls.Button)(target));
             
-            #line 48 "..\..\..\WinLess\Lession.xaml"
-            this.testl10.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            #line 51 "..\..\..\WinLess\Lession.xaml"
+            this.les10.Click += new System.Windows.RoutedEventHandler(this.les10_Click);
             
             #line default
             #line hidden
             return;
             case 21:
+            this.testl10 = ((System.Windows.Controls.Button)(target));
+            
+            #line 52 "..\..\..\WinLess\Lession.xaml"
+            this.testl10.Click += new System.Windows.RoutedEventHandler(this.testl1_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 22:
             this.lespage = ((System.Windows.Controls.Frame)(target));
             return;
             }

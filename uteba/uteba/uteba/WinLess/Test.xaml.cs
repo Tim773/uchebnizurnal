@@ -23,7 +23,7 @@ namespace uteba
     {
 
         int testNum;
-        
+
         int a = 0;
         public Test(int pageNum)
         {
@@ -37,8 +37,8 @@ namespace uteba
         {
 
             progress = (int)usStud.lessCheck;
-            // StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_1.txt");
-            StreamReader sr = new StreamReader($@"C:\Users\WSR\source\repos\uchebnizurnal\uteba\uteba\uteba\tsts\test{testNum}_1.txt");
+
+            StreamReader sr = new StreamReader($"tsts/test{testNum}_1.txt");
             testp.Text = sr.ReadToEnd();
 
 
@@ -47,13 +47,24 @@ namespace uteba
         private void next_Click(object sender, RoutedEventArgs e)
         {
 
-            //StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_2.txt");
-           
-                StreamReader sr = new StreamReader($@"C:\Users\WSR\source\repos\uchebnizurnal\uteba\uteba\uteba\tsts\test{testNum}_2.txt");
+            int b = 0;
+            if (b == 1)
+            {
+                var mesb = MessageBox.Show("Тестирование", "Вы ответили на все вопросы. Завершить тест?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (mesb == MessageBoxResult.Yes)
+                {
+                    finish_Click(sender, e);
+                }
+
+            }
+            else
+            {
+                StreamReader sr = new StreamReader($"tsts/test{testNum}_2.txt");
                 testp.Text = sr.ReadToEnd();
                 otveti.Visibility = Visibility.Hidden;
                 otveti2.Visibility = Visibility.Visible;
-
+                b++;
+            }
         }
 
         private void nazad_Click(object sender, RoutedEventArgs e)
@@ -68,15 +79,15 @@ namespace uteba
 
                 progress += 1;
                 usStud.lessCheck = progress;
-               
+
                 MessageBox.Show("Вы прошли тест, ваш результат учтён!");
                 context.SaveChanges();
-                if (testNum - progress ==1)
+                if (testNum - progress == 1)
                 {
 
                 }
                 Close();
-               
+
                 a = 0;
             }
             else
@@ -92,8 +103,8 @@ namespace uteba
             RadioButton ans = (RadioButton)sender;
             if (testNum == 1)
             {
-              if (ans.Name == "vC" && ans.GroupName == "ans1" ) a++;
-              else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
+                if (ans.Name == "vC" && ans.GroupName == "ans1") a++;
+                else if (ans.Name == "vA2" && ans.GroupName == "ans2") a++;
 
             }
             if (testNum == 2)

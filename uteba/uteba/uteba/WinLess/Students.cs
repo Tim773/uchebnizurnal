@@ -14,7 +14,7 @@ namespace uteba.WinLess
     
     public partial class Students
     {
-        public int idStud { get; set; }
+        public int idStudents { get; set; }
         public string fName { get; set; }
         public string lName { get; set; }
         public System.DateTime dob { get; set; }
@@ -22,7 +22,7 @@ namespace uteba.WinLess
         public int available { get; set; }
         public string login { get; set; }
         public string password { get; set; }
-        public Nullable<int> lessCheck { get; set; }
+        public int lessCheck { get; set; }
     
         public virtual Group Group1 { get; set; }
     }

@@ -24,6 +24,10 @@
             <ColumnDefinition Width="115*"/>
             <ColumnDefinition Width="677*"/>
         </Grid.ColumnDefinitions>
+        <Button x:Name="btn_toKab" 
+                Content="Личный кабинет"
+                Margin="5" 
+                Click="btn_toKab_Click"/>
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
             <StackPanel >
                 <Button x:Name="les1" Content="Лекция 1" Style="{DynamicResource Uuu}" Click="les1_Click"/>

@@ -176,7 +176,6 @@ namespace uteba
             else
             {
                 testl10.Visibility = Visibility.Visible;
-
             }
         }
 
@@ -188,6 +187,11 @@ namespace uteba
             Show();
         }
 
-      
+        private void btn_toKab_Click(object sender, RoutedEventArgs e)
+        {
+            Kabinet kabinet = new Kabinet();
+            Close();
+            kabinet.ShowDialog();
+        }
     }
 }

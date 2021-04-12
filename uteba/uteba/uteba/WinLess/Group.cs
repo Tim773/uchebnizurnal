@@ -22,9 +22,7 @@ namespace uteba.WinLess
     
         public int idGroup { get; set; }
         public string groupName { get; set; }
-        public int curator { get; set; }
     
-        public virtual Teachers Teachers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Students> Students { get; set; }
     }

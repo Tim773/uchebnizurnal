@@ -25,6 +25,14 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Button x:Name="btn_Exit"
+                Content="X"
+                Width="30"
+                Height="30"
+                Click="btn_Exit_Click" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="10"/>
         <DataGrid x:Name="studGrid"
                   Loaded="studGrid_Loaded"
                   AutoGenerateColumns="False"
@@ -32,7 +40,8 @@
                   Grid.Row="1"
                   Grid.Column="1"
                   Grid.ColumnSpan="5"
-                  Grid.RowSpan="4">
+                  Grid.RowSpan="4"
+                  CanUserAddRows="False">
             <DataGrid.Columns  >
                 <DataGridTextColumn Header="Имя"
                                     Binding="{Binding Path=fName}"  Width="auto"/>

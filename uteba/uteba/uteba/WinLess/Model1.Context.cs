@@ -27,6 +27,7 @@ namespace uteba.WinLess
     
         public virtual DbSet<Group> Group { get; set; }
         public virtual DbSet<Students> Students { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Teachers> Teachers { get; set; }
     }
 }

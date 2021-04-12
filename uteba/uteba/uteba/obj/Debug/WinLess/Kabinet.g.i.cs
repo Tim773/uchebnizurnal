@@ -41,7 +41,15 @@ namespace uteba {
     public partial class Kabinet : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 40 "..\..\..\WinLess\Kabinet.xaml"
+        #line 28 "..\..\..\WinLess\Kabinet.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button btn_Exit;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 49 "..\..\..\WinLess\Kabinet.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock txtblk_fName;
         
@@ -49,7 +57,7 @@ namespace uteba {
         #line hidden
         
         
-        #line 47 "..\..\..\WinLess\Kabinet.xaml"
+        #line 56 "..\..\..\WinLess\Kabinet.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock txtblk_lName;
         
@@ -57,7 +65,7 @@ namespace uteba {
         #line hidden
         
         
-        #line 54 "..\..\..\WinLess\Kabinet.xaml"
+        #line 63 "..\..\..\WinLess\Kabinet.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.TextBlock txtblk_group;
         
@@ -65,7 +73,7 @@ namespace uteba {
         #line hidden
         
         
-        #line 62 "..\..\..\WinLess\Kabinet.xaml"
+        #line 71 "..\..\..\WinLess\Kabinet.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button btn_lessons;
         
@@ -73,7 +81,7 @@ namespace uteba {
         #line hidden
         
         
-        #line 68 "..\..\..\WinLess\Kabinet.xaml"
+        #line 77 "..\..\..\WinLess\Kabinet.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ProgressBar pb_Lesson;
         
@@ -119,24 +127,33 @@ namespace uteba {
             #line hidden
             return;
             case 2:
-            this.txtblk_fName = ((System.Windows.Controls.TextBlock)(target));
+            this.btn_Exit = ((System.Windows.Controls.Button)(target));
+            
+            #line 33 "..\..\..\WinLess\Kabinet.xaml"
+            this.btn_Exit.Click += new System.Windows.RoutedEventHandler(this.btn_Exit_Click);
+            
+            #line default
+            #line hidden
             return;
             case 3:
-            this.txtblk_lName = ((System.Windows.Controls.TextBlock)(target));
+            this.txtblk_fName = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 4:
-            this.txtblk_group = ((System.Windows.Controls.TextBlock)(target));
+            this.txtblk_lName = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 5:
+            this.txtblk_group = ((System.Windows.Controls.TextBlock)(target));
+            return;
+            case 6:
             this.btn_lessons = ((System.Windows.Controls.Button)(target));
             
-            #line 67 "..\..\..\WinLess\Kabinet.xaml"
+            #line 76 "..\..\..\WinLess\Kabinet.xaml"
             this.btn_lessons.Click += new System.Windows.RoutedEventHandler(this.btn_lessons_Click);
             
             #line default
             #line hidden
             return;
-            case 6:
+            case 7:
             this.pb_Lesson = ((System.Windows.Controls.ProgressBar)(target));
             return;
             }

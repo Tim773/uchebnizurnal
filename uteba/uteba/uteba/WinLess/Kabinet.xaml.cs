@@ -30,9 +30,7 @@ namespace uteba
         {
             Lession lession = new Lession();
             Close();
-            lession.ShowDialog();
-            
-
+            lession.ShowDialog();            
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -43,6 +41,12 @@ namespace uteba
             pb_Lesson.Value = (int)usStud.lessCheck;
         }
 
-        
+        private void btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Close();
+            mainWindow.ShowDialog();
+        }
+
     }
 }

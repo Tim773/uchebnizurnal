@@ -25,7 +25,16 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-
+        <Button x:Name="btn_Exit"
+                Content="X"
+                Grid.Column="3"
+                Width="30"
+                Height="30"
+                Click="btn_Exit_Click" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="10"/>
+        
         <Label Content="Личный кабинет"
                FontSize="35"
                Grid.ColumnSpan="2"
