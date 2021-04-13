@@ -1,29 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="LessonAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="uchebniyjurnalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Group">
     <Key>
       <PropertyRef Name="idGroup" />
     </Key>
     <Property Name="idGroup" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="groupName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="curator" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="Teachers" Relationship="Self.FK_Group_Teachers" FromRole="Group" ToRole="Teachers" />
     <NavigationProperty Name="Students" Relationship="Self.FK_Students_Group" FromRole="Group" ToRole="Students" />
   </EntityType>
   <EntityType Name="Students">
     <Key>
-      <PropertyRef Name="idStud" />
+      <PropertyRef Name="idStudents" />
     </Key>
-    <Property Name="idStud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idStudents" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="fName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="lName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="dob" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="dob" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="group" Type="Int32" Nullable="false" />
     <Property Name="available" Type="Int32" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lessCheck" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Group1" Relationship="Self.FK_Students_Group" FromRole="Students" ToRole="Group" />
-    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="lessCheck" Type="Int32" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="Teachers">
     <Key>
@@ -32,23 +40,10 @@
     <Property Name="idTeachers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="fName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="lName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="dob" Type="DateTime" Nullable="false" Precision="7" />
-    <NavigationProperty Name="Group" Relationship="Self.FK_Group_Teachers" FromRole="Teachers" ToRole="Group" />
-    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dob" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
-  <Association Name="FK_Group_Teachers">
-    <End Role="Teachers" Type="Self.Teachers" Multiplicity="1" />
-    <End Role="Group" Type="Self.Group" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Teachers">
-        <PropertyRef Name="idTeachers" />
-      </Principal>
-      <Dependent Role="Group">
-        <PropertyRef Name="curator" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_Students_Group">
     <End Role="Group" Type="Self.Group" Multiplicity="1" />
     <End Role="Students" Type="Self.Students" Multiplicity="*" />
@@ -64,11 +59,8 @@
   <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Group" EntityType="Self.Group" />
     <EntitySet Name="Students" EntityType="Self.Students" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="Teachers" EntityType="Self.Teachers" />
-    <AssociationSet Name="FK_Group_Teachers" Association="Self.FK_Group_Teachers">
-      <End Role="Teachers" EntitySet="Teachers" />
-      <End Role="Group" EntitySet="Group" />
-    </AssociationSet>
     <AssociationSet Name="FK_Students_Group" Association="Self.FK_Students_Group">
       <End Role="Group" EntitySet="Group" />
       <End Role="Students" EntitySet="Students" />

@@ -46,9 +46,9 @@ namespace uteba.WinLess
             }
             if (MessageBox.Show("Строка пользователя будет удалена из таблицы. Желаете продолжить?", "Удаление", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-                int del = (studGrid.SelectedItem as Students).idStud;
+                int del = (studGrid.SelectedItem as Students).idStudents;
 
-                Students students = context.Students.Where(i => i.idStud == del).FirstOrDefault();
+                Students students = context.Students.Where(i => i.idStudents == del).FirstOrDefault();
                 students.available = 0;
                 context.SaveChanges();
                 studGrid_Loaded(sender, e);

@@ -37,8 +37,8 @@ namespace uteba
         {
 
             progress = (int)usStud.lessCheck;
-            // StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_1.txt");
-            StreamReader sr = new StreamReader($@"C:\Users\WSR\source\repos\uchebnizurnal\uteba\uteba\uteba\tsts\test{testNum}_1.txt");
+            
+            StreamReader sr = new StreamReader($"tsts/test{testNum}_1.txt");
             testp.Text = sr.ReadToEnd();
 
 
@@ -47,9 +47,8 @@ namespace uteba
         private void next_Click(object sender, RoutedEventArgs e)
         {
 
-            //StreamReader sr = new StreamReader($@"D:\uchebnizurnal\uteba\uteba\uteba\tests\test{testNum}_2.txt");
            
-                StreamReader sr = new StreamReader($@"C:\Users\WSR\source\repos\uchebnizurnal\uteba\uteba\uteba\tsts\test{testNum}_2.txt");
+                StreamReader sr = new StreamReader($"tsts/test{testNum}_2.txt");
                 testp.Text = sr.ReadToEnd();
                 otveti.Visibility = Visibility.Hidden;
                 otveti2.Visibility = Visibility.Visible;
