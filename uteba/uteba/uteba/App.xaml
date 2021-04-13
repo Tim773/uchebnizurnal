@@ -17,6 +17,7 @@
             <Setter Property="Height" Value="50"/>
             <Setter Property="Width" Value="250"/>
             <Setter Property="FontSize" Value="30"/>
+            
 
         </Style>
         <Style x:Key="psw_box" TargetType="PasswordBox">
@@ -25,6 +26,7 @@
             <Setter Property="FontSize" Value="30"/>
 
         </Style>
+       
        
     </Application.Resources>
 </Application>

@@ -74,7 +74,7 @@ namespace uteba
         private void bt_reg_Click(object sender, RoutedEventArgs e)
         {
             RegWindow reg = new RegWindow();
-            this.Close();
+            this.Hide();
             reg.ShowDialog();
             this.Show();
         }

@@ -26,17 +26,17 @@
             
             <StackPanel Grid.Row="2" Grid.RowSpan="6">
                 <Label Content="Name" Style="{StaticResource Label}"/>
-                <TextBox x:Name="name_txt" Style="{StaticResource txt_box}"/>
+                <TextBox x:Name="name_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Surname" Style="{StaticResource Label}"/>
-                <TextBox x:Name="surname_txt" Style="{StaticResource txt_box}"/>
+                <TextBox x:Name="surname_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Date of Birth" Style="{StaticResource Label}"/>
                 <DatePicker x:Name="dobPick" Height="50" Width="250"/>
 
 
                 <Label Content="Login" Style="{StaticResource Label}"/>
-                <TextBox x:Name="rlog_txt" Style="{StaticResource txt_box}"/>
+                <TextBox x:Name="rlog_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Password" Style="{StaticResource Label}"/>
-                <PasswordBox x:Name="rpsw_txt" Style="{StaticResource psw_box}"/>
+                <PasswordBox x:Name="rpsw_txt" Style="{StaticResource psw_box}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Group" Style="{StaticResource Label}"/>
                 <ComboBox x:Name="cb_group"
                     Height="50" Width="250" ItemsSource="{Binding Group.groupName}"
