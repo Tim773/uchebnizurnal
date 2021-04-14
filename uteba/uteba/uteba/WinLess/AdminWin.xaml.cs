@@ -31,31 +31,46 @@ namespace uteba.WinLess
             var stud = context.Students;
             var gr = context.Group;
             grCB.ItemsSource = gr.ToList();
-            
+
             var result = stud.Where(i => i.available > 0);
             studGrid.ItemsSource = result.ToList();
-          
+
         }
 
         private void soft_del_Click(object sender, RoutedEventArgs e)
         {
-            var itm = studGrid.SelectedItem;
-            if (itm == null)
+            try
             {
-                return;
+                var itm = studGrid.SelectedItem;
+                if (itm == null)
+                {
+                    return;
+                }
+                if (MessageBox.Show("Строка пользователя будет удалена из таблицы. Желаете продолжить?", "Удаление", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                {
+                    int del = (studGrid.SelectedItem as Students).idStudents;
+
+                    Students students = context.Students.Where(i => i.idStudents == del).FirstOrDefault();
+                    students.available = 0;
+                    context.SaveChanges();
+                    studGrid_Loaded(sender, e);
+                }
+                else return;
+
             }
-            if (MessageBox.Show("Строка пользователя будет удалена из таблицы. Желаете продолжить?", "Удаление", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            catch (Exception ex)
             {
-                int del = (studGrid.SelectedItem as Students).idStudents;
 
-                Students students = context.Students.Where(i => i.idStudents == del).FirstOrDefault();
-                students.available = 0;
-                context.SaveChanges();
-                studGrid_Loaded(sender, e);
+                MessageBox.Show("Что-то пошло не так!!!!!!", ex.Message);
             }
-            else return;
-           
 
+
+        }
+        private void btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Close();
+            mainWindow.ShowDialog();
         }
     }
 }

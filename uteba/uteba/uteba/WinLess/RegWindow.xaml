@@ -21,7 +21,23 @@
             <RowDefinition/>
 
         </Grid.RowDefinitions>
-        <Label Content="Registation"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Top" Foreground="#FFFFF2F2" FontFamily="Snap ITC" Grid.RowSpan="2"/>
+        <Label Content="Registation" 
+               HorizontalAlignment="Center"
+               FontSize="50" 
+               VerticalAlignment="Center"
+               Foreground="#FFFFF2F2"
+               FontFamily="Snap ITC"
+               Grid.RowSpan="2"/>
+        
+        <Button x:Name="btn_Exit"
+                Content="X"
+                Width="30"
+                Height="30"
+                Click="btn_Exit_Click" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="10"/>
+        
         <ScrollViewer Grid.Row="2" Grid.RowSpan="8">
             
             <StackPanel Grid.Row="2" Grid.RowSpan="6">

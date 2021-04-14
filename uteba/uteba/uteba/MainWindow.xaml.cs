@@ -52,13 +52,15 @@ namespace uteba
                     Close();
                     usStud = user1;
                     studWin.ShowDialog();
-                    
+                   // this.Show();
+
                 }
                 else if(user1 == null && user2 != null)
                 {
                     Close();
                     usTeach = user2;
                     adminWin.ShowDialog();
+                    //this.Show();
                 }
                 else 
                 {

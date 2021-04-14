@@ -76,5 +76,12 @@ namespace uteba
             var gr = context.Group;
             cb_group.ItemsSource = gr.ToList();
         }
+
+        private void btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Close();
+            mainWindow.ShowDialog();
+        }
     }
 }
