@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
-        Title="Lession" Height="450" Width="800" Background="#FFA09E96">
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Title="Lession" Height="auto" Width="auto" Background="#FFA09E96">
     <Window.Resources>
         <Style TargetType="Button" x:Key="Uuu">
             <Setter Property="FontSize" Value="17"/>

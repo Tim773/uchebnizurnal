@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="Autoriz" Height="600" Width="400" WindowStartupLocation="CenterScreen">
    
    
@@ -19,7 +20,13 @@
             <RowDefinition/>
             
         </Grid.RowDefinitions>
-        <Label Content="Welcome!"  HorizontalAlignment="Center" FontSize="50" VerticalAlignment="Center" Foreground="#FFFFF2F2" FontFamily="Snap ITC"/>
+        <Label Content="Авторизация" 
+               Grid.RowSpan="2"
+               HorizontalAlignment="Center" 
+               FontSize="50" 
+               VerticalAlignment="Center" 
+               Foreground="#FFFFF2F2" 
+               FontFamily="Book Antiqua" FontWeight="Bold"/>
         <Label Content="Login" Grid.Row="1" Margin=" 71,0" VerticalAlignment="Bottom" Style="{StaticResource Label}"/>
         <TextBox x:Name="log_txtbx" Grid.Row="2" Style="{StaticResource txt_box}"/>
         <Label Content="Password" Grid.Row="3"  Style="{StaticResource Label}" />

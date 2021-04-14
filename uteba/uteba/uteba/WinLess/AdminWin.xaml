@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:uteba.WinLess"
         mc:Ignorable="d"
         Background="#FFA09E96"
-        Title="AdminWin" Height="450" Width="800">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="AdminWin" Height="auto" Width="auto">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="44*"/>
@@ -36,23 +38,25 @@
         <DataGrid x:Name="studGrid"
                   Loaded="studGrid_Loaded"
                   AutoGenerateColumns="False"
-                FontSize="25"
+                  FontSize="25"
                   Grid.Row="1"
                   Grid.Column="1"
                   Grid.ColumnSpan="5"
                   Grid.RowSpan="4"
+                  CanUserResizeColumns="False"
+                  CanUserResizeRows="False"
                   CanUserAddRows="False">
             <DataGrid.Columns  >
                 <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding Path=fName}"  Width="auto"/>
+                                    Binding="{Binding Path=fName}"  Width="*"/>
                 <DataGridTextColumn Header="Фамилия"
                                     Binding="{Binding Path=lName,
                     Mode=TwoWay,
-                    UpdateSourceTrigger=PropertyChanged}" Width="auto" />
+                    UpdateSourceTrigger=PropertyChanged}" Width="*" />
                 <DataGridComboBoxColumn x:Name="grCB" Header="Группа"
                                     SelectedValueBinding="{Binding Path=group,
                     Mode=TwoWay,
-                    UpdateSourceTrigger=PropertyChanged}"  DisplayMemberPath="groupName" SelectedValuePath="idGroup" Width="auto" />
+                    UpdateSourceTrigger=PropertyChanged}"  DisplayMemberPath="groupName" SelectedValuePath="idGroup" Width="*" />
                 <DataGridTextColumn Header="Прогресс"
                                     Binding="{Binding Path=lessCheck,
                     Mode=TwoWay,

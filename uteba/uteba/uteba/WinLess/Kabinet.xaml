@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="Kabinet" Height="450" Width="800" Background="#FFA09E96">
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="Kabinet" Height="auto" Width="auto" Background="#FFA09E96">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -41,7 +44,9 @@
                />
         <Border BorderThickness="5"
                 BorderBrush="Black" 
-               Margin="39 0"
+                x:Name="brdr_photo"
+                Height="120" 
+                Width="120"
                 Grid.Row="2"
                 Grid.RowSpan="2">
         </Border>
@@ -61,12 +66,12 @@
                    VerticalAlignment="Center"
                    />
         <TextBlock x:Name="txtblk_group"
-                   Text="Group123" 
+                   Text="{Binding Path=group}"
+                
                    FontSize="30"
                    Grid.Row="3"
-                   Grid.Column="1"
-                   VerticalAlignment="Center"
-                  
+                   Grid.Column="1"                   
+                   VerticalAlignment="Center"                  
                    />
         <Button x:Name="btn_lessons"
                 Content="Лекции"

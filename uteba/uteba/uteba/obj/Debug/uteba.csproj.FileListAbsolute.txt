@@ -57,7 +57,6 @@ D:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\RegWindow.baml
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\uteba.exe.config
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\uteba.exe
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\uteba.pdb
-F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csprojAssemblyReference.cache
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Kabinet.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\LesPage.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\Lession.g.cs
@@ -144,3 +143,13 @@ C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\u
 C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.exe
 C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.pdb
 C:\Users\Тимошка\source\repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csprojAssemblyReference.cache
+F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.dll
+F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.SqlServer.dll
+F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.xml
+F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.SqlServer.xml
+F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\ru\EntityFramework.resources.dll
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\ResStyle\WinButStyles.baml
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\AdminWin.g.cs
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba_Content.g.cs
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\AdminWin.baml
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CopyComplete

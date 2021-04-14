@@ -37,8 +37,12 @@ namespace uteba
         {
             txtblk_fName.Text = usStud.fName;
             txtblk_lName.Text = usStud.lName;
-            txtblk_group.Text = usStud.group.ToString();
+            // txtblk_group.DataContext = usStud.group.ToString();    
+            var gr = context.Group.Where(i => i.idGroup == usStud.group).Select(c => c.groupName).FirstOrDefault();
+            txtblk_group.Text = gr.ToString();
             pb_Lesson.Value = (int)usStud.lessCheck;
+
+           // brdr_photo.Background = usStud.photo;
         }
 
         private void btn_Exit_Click(object sender, RoutedEventArgs e)

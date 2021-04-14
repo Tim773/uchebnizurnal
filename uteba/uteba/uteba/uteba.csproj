@@ -109,6 +109,10 @@
     <Compile Include="WinLess\Test.xaml.cs">
       <DependentUpon>Test.xaml</DependentUpon>
     </Compile>
+    <Page Include="ResStyle\WinButStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WinLess\AdminWin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

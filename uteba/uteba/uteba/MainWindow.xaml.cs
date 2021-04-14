@@ -42,23 +42,25 @@ namespace uteba
             try
             {
                 var user1 = context.Students.ToList().
-                    Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
+                    Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password && i.available == 1).FirstOrDefault();
                 var user2 = context.Teachers.ToList().
                     Where(i => log_txtbx.Text == i.login && pass_psbx.Password == i.password).FirstOrDefault();
-                AdminWin adminWin = new AdminWin();
-                Kabinet studWin = new Kabinet();
+                
+               
                 if (user1 != null && user2 == null)
                 {
-                    Close();
                     usStud = user1;
+                    Kabinet studWin = new Kabinet();
+                    Close();
                     studWin.ShowDialog();
                    // this.Show();
 
                 }
                 else if(user1 == null && user2 != null)
                 {
-                    Close();
                     usTeach = user2;
+                    AdminWin adminWin = new AdminWin();
+                    Close();
                     adminWin.ShowDialog();
                     //this.Show();
                 }
@@ -78,7 +80,7 @@ namespace uteba
             RegWindow reg = new RegWindow();
             this.Hide();
             reg.ShowDialog();
-            this.Show();
+           
         }
     }
 }
