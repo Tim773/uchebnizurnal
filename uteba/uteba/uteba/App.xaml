@@ -8,26 +8,97 @@
         <Style x:Key="Label" TargetType="Label">
             <Setter Property="Foreground" Value="BurlyWood"/>
             <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="Book Antiqua"/>
             <Setter Property="Margin" Value="71,0"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="VerticalAlignment" Value="Bottom"/>
 
 
         </Style>
-        <Style x:Key="txt_box" TargetType="TextBox">
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="250"/>
+        
+        <Style x:Key="txtbxStyle" TargetType="TextBox" >
+            <Setter Property="ItemsControl.HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="ItemsControl.Foreground" Value="#705420"/>
+            <Setter Property="Margin" Value="59 15"/>
             <Setter Property="FontSize" Value="30"/>
+            <Setter Property="ItemsControl.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Control}">
+                        <Border CornerRadius="11">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                    <GradientStop Color="#E9D6D0" Offset="0.8"/>
+                                    <GradientStop Color="White" Offset="-0.065"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <Style x:Key="psbStyle" TargetType="PasswordBox" >
+            <Setter Property="ItemsControl.HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="ItemsControl.Foreground" Value="#705420"/>
+            <Setter Property="Margin" Value="59 15"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="ItemsControl.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Control}">
+                        <Border CornerRadius="11">
+                            <Border.Background>
+                                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                    <GradientStop Color="#E9D6D0" Offset="0.8"/>
+                                    <GradientStop Color="White" Offset="-0.065"/>
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="{x:Type Button}">
+            <Setter Property="ItemsControl.FontFamily" Value="Book Antiqua"/>
+            <Setter Property="ItemsControl.Foreground" Value="White"/>
+            <Setter Property="ItemsControl.VerticalContentAlignment" Value="Center"/>
             
+            <Setter Property="ItemsControl.Effect">
+                <Setter.Value>
+                    <DropShadowEffect Direction="5" ShadowDepth="5" Opacity="1" BlurRadius="5" RenderingBias="Performance"/>
+                </Setter.Value>
+            </Setter>
 
+            <Setter Property="ItemsControl.Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="15"
+                                Background="#6C8D7D"
+                                BorderThickness="0.5">
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Button.IsMouseOver" Value="True">
+                    <Setter Property="ItemsControl.Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="5"
+                                Background="#164E33"
+                                BorderThickness="0.5">
+                                    <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
         </Style>
-        <Style x:Key="psw_box" TargetType="PasswordBox">
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="250"/>
-            <Setter Property="FontSize" Value="30"/>
 
-        </Style>
-       
-       
+
     </Application.Resources>
 </Application>

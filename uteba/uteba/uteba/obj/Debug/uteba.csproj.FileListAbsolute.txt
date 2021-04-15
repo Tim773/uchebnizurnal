@@ -148,8 +148,9 @@ F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.SqlServer.dll
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.xml
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.SqlServer.xml
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\ru\EntityFramework.resources.dll
-F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\ResStyle\WinButStyles.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\AdminWin.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba_Content.g.cs
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinLess\AdminWin.baml
 F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CopyComplete
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinButStyles.baml
+F:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csprojAssemblyReference.cache
