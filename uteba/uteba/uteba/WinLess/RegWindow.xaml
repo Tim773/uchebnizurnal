@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba"
         mc:Ignorable="d"
-        Title="RegWindow" Height="660" Width="450" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FFA09E96">
+        SizeToContent="Height"
+        Style="{StaticResource winStyle}"
+        Title="RegWindow" Height="auto" Width="550" WindowStartupLocation="CenterScreen">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -25,11 +27,12 @@
                FontSize="50" 
                VerticalAlignment="Center"
                Foreground="#FFFFF2F2"
-               FontFamily="Snap ITC"
+               Style="{StaticResource Label}"
                Grid.RowSpan="2"/>
         
         <Button x:Name="btn_Exit"
                 Content="X"
+                FontSize="20"
                 Width="30"
                 Height="30"
                 Click="btn_Exit_Click" 
@@ -37,22 +40,31 @@
                 VerticalAlignment="Top"
                 Margin="10"/>
         
-        <ScrollViewer Grid.Row="2" Grid.RowSpan="8">
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto" Grid.RowSpan="8">
             
             <StackPanel Grid.Row="2" Grid.RowSpan="6">
                 <Label Content="Name" Style="{StaticResource Label}"/>
-                <TextBox x:Name="name_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
+                <TextBox x:Name="name_txt" Style="{StaticResource txtbxStyle}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Surname" Style="{StaticResource Label}"/>
-                <TextBox x:Name="surname_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
+                <TextBox x:Name="surname_txt" Style="{StaticResource txtbxStyle}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Date of Birth" Style="{StaticResource Label}"/>
-                <DatePicker x:Name="dobPick" Height="50" Width="250"/>
+                <Viewbox Margin="71 10" >
+                    <DatePicker x:Name="dobPick" Width="200" BorderBrush="White">
+
+                    </DatePicker>
+
+                    <Viewbox.Effect>
+                        <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#FFFFF2ED"/>
+                    </Viewbox.Effect>
+                </Viewbox>
                 <Label Content="Login" Style="{StaticResource Label}"/>
-                <TextBox x:Name="rlog_txt" Style="{StaticResource txt_box}" PreviewKeyDown="TextBox_KeyDown"/>
+                <TextBox x:Name="rlog_txt" Style="{StaticResource txtbxStyle}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Password" Style="{StaticResource Label}"/>
-                <PasswordBox x:Name="rpsw_txt" Style="{StaticResource psw_box}" PreviewKeyDown="TextBox_KeyDown"/>
+                <PasswordBox x:Name="rpsw_txt" Style="{StaticResource psbStyle}" PreviewKeyDown="TextBox_KeyDown"/>
                 <Label Content="Group" Style="{StaticResource Label}"/>
                 <ComboBox x:Name="cb_group"
                     Height="50" Width="250" ItemsSource="{Binding Group.groupName}"
+                          
                           DisplayMemberPath="groupName"
                           SelectedValuePath="idGroup"
                           Loaded="ComboBox_Loaded"/>

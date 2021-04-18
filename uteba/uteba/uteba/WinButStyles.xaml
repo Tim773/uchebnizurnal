@@ -1,8 +1,137 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                      xmlns:local="clr-namespace:uteba">
-    
-    
+
+    <LinearGradientBrush x:Key="winBrush" EndPoint="0.5,1" StartPoint="0.5,0" >
+        <GradientStop Color="#CAA89C" Offset="0.2"/>
+        <GradientStop Color="#CABA9C" Offset="1"/>
+    </LinearGradientBrush>
+
+    <Style x:Key="winStyle" TargetType="Window">
+        <Setter Property="Background" Value="{StaticResource winBrush}"/>
+    </Style>
+
+
+    <Style x:Key="Label" TargetType="Label">
+        <Setter Property="Foreground" Value="BurlyWood"/>
+        <Setter Property="FontSize" Value="25"/>
+        <Setter Property="FontFamily" Value="Book Antiqua"/>
+        <Setter Property="Margin" Value="71,0"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="6" ShadowDepth="0" Color="#FFCAA89C"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="VerticalAlignment" Value="Bottom"/>
+    </Style>
+
+    <Style x:Key="txtbxStyle" TargetType="TextBox" >
+        <Setter Property="ItemsControl.HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.Foreground" Value="#705420"/>
+        <Setter Property="ItemsControl.VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="59 15"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#FFFFF2ED"/>
+
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsControl.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Control}">
+                    <Border CornerRadius="11">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#E9D6D0" Offset="0.8"/>
+                                <GradientStop Color="White" Offset="-0.065"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <ScrollViewer x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="psbStyle" TargetType="PasswordBox" >
+        <Setter Property="ItemsControl.HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.VerticalContentAlignment" Value="Center"/>
+        <Setter Property="ItemsControl.Foreground" Value="#705420"/>
+        <Setter Property="Margin" Value="59 15"/>
+        <Setter Property="FontSize" Value="30"/>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect BlurRadius="20" ShadowDepth="0" Color="#FFFFF2ED"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemsControl.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Control}">
+                    <Border CornerRadius="11">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#E9D6D0" Offset="0.8"/>
+                                <GradientStop Color="White" Offset="-0.065"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <ScrollViewer x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="{x:Type Button}">
+        <Setter Property="ItemsControl.FontFamily" Value="Book Antiqua"/>
+        <Setter Property="ItemsControl.Foreground" Value="White"/>
+        <Setter Property="ItemsControl.VerticalContentAlignment" Value="Center"/>
+
+        <Setter Property="ItemsControl.Effect">
+            <Setter.Value>
+                <DropShadowEffect Direction="-80" ShadowDepth="2" Opacity="0.8" BlurRadius="6"/>
+            </Setter.Value>
+        </Setter>
+
+        <Setter Property="ItemsControl.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="15"
+                                Background="#6C8D7D"
+                                BorderThickness="0.5">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="Button.IsMouseOver" Value="True">
+                <Setter Property="ItemsControl.Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border CornerRadius="15"
+                                Background="#164E33"
+                                BorderThickness="0.5">
+                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="grStyle" TargetType="DataGrid">
+        <Setter Property="Background" Value="#6D5C66"/>
+        <Setter Property="RowBackground" Value="#D7B4CA"/>
+        <Setter Property="AlternatingRowBackground" Value="#D7C0CE"/>
+        
+
+    </Style>
     <!-->
         Стили для кнопок лекций, тестов;
          https://colorscheme.ru/#0d6277nppDGAv

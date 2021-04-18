@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         WindowStyle="None"
+        Style="{StaticResource winStyle}"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
-        Title="Kabinet" Height="auto" Width="auto" Background="#FFA09E96">
+        Title="Kabinet" Height="auto" Width="auto">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -37,10 +38,12 @@
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
                 Margin="10"/>
-        
+
         <Label Content="Личный кабинет"
                FontSize="35"
                Grid.ColumnSpan="2"
+               Style="{StaticResource Label}"
+               HorizontalAlignment="Left" Margin="36,0,0,0" Width="338"
                />
         <Border BorderThickness="5"
                 BorderBrush="Black" 
@@ -54,6 +57,7 @@
         <TextBlock x:Name="txtblk_fName"
                    Text="Name" 
                    FontSize="30"
+                   Foreground="#58193F"
                    Grid.Row="2"
                    Grid.Column="1"
                    VerticalAlignment="Center"
@@ -61,13 +65,14 @@
         <TextBlock x:Name="txtblk_lName"
                    Text="LastName" 
                    FontSize="30"
+                   Foreground="#58193F"
                    Grid.Row="2"
                    Grid.Column="2"
                    VerticalAlignment="Center"
                    />
         <TextBlock x:Name="txtblk_group"
                    Text="{Binding Path=group}"
-                
+                   Foreground="#58193F"
                    FontSize="30"
                    Grid.Row="3"
                    Grid.Column="1"                   
@@ -81,7 +86,7 @@
                 Click="btn_lessons_Click"/>
         <ProgressBar x:Name="pb_Lesson"
                      Minimum="0"                     
-                     Maximum="10"
+                     Maximum="10"                     
                      Value="3"
                      Grid.Column="1"                     
                      Grid.ColumnSpan="2"

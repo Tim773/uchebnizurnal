@@ -100,9 +100,6 @@
     <Compile Include="WinLess\Students.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="WinLess\sysdiagrams.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="WinLess\Teachers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

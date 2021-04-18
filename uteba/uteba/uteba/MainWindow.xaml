@@ -10,17 +10,8 @@
         Height="600" 
         Width="400"
         WindowStartupLocation="CenterScreen"
-        
+        Style="{StaticResource winStyle}"
         >
-    <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="#CAA89C" Offset="0.2"/>
-            <GradientStop Color="#CABA9C" Offset="1"/>
-        </LinearGradientBrush>
-    </Window.Background>
-
-
-
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -44,9 +35,8 @@
         <Label Content="Login" Grid.Row="1" Margin=" 65,0" VerticalAlignment="Bottom" Style="{StaticResource Label}"/>
         <Label Content="Password" Grid.Row="3" Margin="65 0"  Style="{StaticResource Label}" />
         <WrapPanel Grid.Row="5" >
-            <Button x:Name="bt_ent" FontSize="16" IsDefault="True" Content="Enter" Click="bt_ent_Click" Height="50" Width="100" Margin="65 10" >
-               
-            </Button>
+            <Button x:Name="bt_ent" FontSize="16" IsDefault="True" Content="Enter" Click="bt_ent_Click" Height="50" Width="100" Margin="65 10" />
+
             <Button x:Name="bt_reg" FontSize="16" Grid.Row="5" Content="Registration" Click="bt_reg_Click" Height="50" Width="100"  />
         </WrapPanel>
     </Grid>

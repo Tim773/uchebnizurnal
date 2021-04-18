@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uteba.WinLess"
         mc:Ignorable="d"
-        Background="#FFA09E96"
+        Style="{StaticResource winStyle}"
+        WindowStartupLocation="CenterScreen"        
         WindowStyle="None"
+        SizeToContent="Height"
         ResizeMode="NoResize"
-        Title="AdminWin" Height="auto" Width="auto">
+        Title="AdminWin" Height="auto" Width="690">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="44*"/>
@@ -42,11 +44,13 @@
                   Grid.Row="1"
                   Grid.Column="1"
                   Grid.ColumnSpan="5"
+                  
+                  Style="{StaticResource grStyle}"
                   Grid.RowSpan="4"
                   CanUserResizeColumns="False"
                   CanUserResizeRows="False"
                   CanUserAddRows="False">
-            <DataGrid.Columns  >
+            <DataGrid.Columns>
                 <DataGridTextColumn Header="Имя"
                                     Binding="{Binding Path=fName}"  Width="*"/>
                 <DataGridTextColumn Header="Фамилия"
@@ -66,7 +70,13 @@
             </DataGrid.Columns>
           
         </DataGrid>
-        <Button x:Name="soft_del" Content="Удалить" Grid.Column="3" Grid.Row="5" Height="20" Width="100" Click="soft_del_Click"/>
+        <Button x:Name="soft_del" 
+                Content="Удалить"
+                Grid.Column="3" 
+                Grid.Row="5"
+                Height="30"
+                Margin="0 10"
+                Click="soft_del_Click"/>
 
     </Grid>
 </Window>
