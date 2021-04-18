@@ -83,5 +83,10 @@ namespace uteba
             Close();
             mainWindow.ShowDialog();
         }
+
+        private void cb_group_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

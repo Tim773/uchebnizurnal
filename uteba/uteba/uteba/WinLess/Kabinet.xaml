@@ -45,28 +45,37 @@
                Style="{StaticResource Label}"
                HorizontalAlignment="Left" Margin="36,0,0,0" Width="338"
                />
-        <Border BorderThickness="5"
-                BorderBrush="Black" 
-                x:Name="brdr_photo"
-                Height="120" 
-                Width="120"
-                Grid.Row="2"
-                Grid.RowSpan="2">
-        </Border>
-
+        <Label     Content="Имя" 
+                   FontSize="30"
+                   Foreground="#58193F"
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"/>
+        <Label     Content="Фамилия" 
+                   FontSize="30"
+                   Foreground="#58193F"
+                   Grid.Row="3"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"/>
+        <Label     Content="Группа" 
+                   FontSize="30"
+                   Foreground="#58193F"
+                   Grid.Row="4"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"/>
         <TextBlock x:Name="txtblk_fName"
                    Text="Name" 
                    FontSize="30"
                    Foreground="#58193F"
                    Grid.Row="2"
-                   Grid.Column="1"
+                   Grid.Column="2"
                    VerticalAlignment="Center"
                    />
         <TextBlock x:Name="txtblk_lName"
                    Text="LastName" 
                    FontSize="30"
                    Foreground="#58193F"
-                   Grid.Row="2"
+                   Grid.Row="3"
                    Grid.Column="2"
                    VerticalAlignment="Center"
                    />
@@ -74,8 +83,8 @@
                    Text="{Binding Path=group}"
                    Foreground="#58193F"
                    FontSize="30"
-                   Grid.Row="3"
-                   Grid.Column="1"                   
+                   Grid.Row="4"
+                   Grid.Column="2"                   
                    VerticalAlignment="Center"                  
                    />
         <Button x:Name="btn_lessons"

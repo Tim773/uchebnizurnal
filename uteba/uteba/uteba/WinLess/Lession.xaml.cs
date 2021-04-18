@@ -193,5 +193,12 @@ namespace uteba
             Close();
             kabinet.ShowDialog();
         }
+
+        private void btn_Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            Close();
+            mainWindow.ShowDialog();
+        }
     }
 }

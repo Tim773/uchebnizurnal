@@ -31,6 +31,15 @@
                 Content="Личный кабинет"
                 Margin="5" 
                 Click="btn_toKab_Click"/>
+        <Button x:Name="btn_Exit" 
+                Content="X"
+                Width="27"
+                Height="27"
+                Click="btn_Exit_Click" 
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="10 5 10 5"                 
+                Grid.Column = "1" />
         <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
             <StackPanel >
                 <Button x:Name="les1" Content="Лекция 1" Style="{DynamicResource Uuu}" Click="les1_Click"/>

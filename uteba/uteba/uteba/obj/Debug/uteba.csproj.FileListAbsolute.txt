@@ -142,7 +142,6 @@ C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\u
 C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CopyComplete
 C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.exe
 C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.pdb
-C:\Users\Тимошка\source\repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csprojAssemblyReference.cache
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.dll
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.SqlServer.dll
 F:\uchebnizurnal\uteba\uteba\uteba\bin\Debug\EntityFramework.xml
@@ -191,3 +190,4 @@ E:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CoreCompileInputs.cach
 E:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.csproj.CopyComplete
 E:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.exe
 E:\uchebnizurnal\uteba\uteba\uteba\obj\Debug\uteba.pdb
+C:\Users\Тимошка\Source\Repos\uchebnizurnal\uteba\uteba\uteba\obj\Debug\WinButStyles.baml
